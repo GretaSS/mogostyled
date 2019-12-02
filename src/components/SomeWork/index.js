@@ -8,15 +8,16 @@ import work5 from '../../assets/images/work-5.jpg';
 import work6 from '../../assets/images/work-6.jpg';
 import work7 from '../../assets/images/work-7.jpg';
 
+import Section from '../../Section';
 
 function SomeWork(){
     return(
         <div className='SomeWork'>
-            <div className='section'>
-                <div className="section_suptitle">What we do</div>
-                <div className='section_title'>Some of our work</div>  
-                <p className="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>              
-            </div>
+            <Section 
+                suptitle='What we do' 
+                title='Some of our work' 
+                text='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+            />
 
             <div className='pics'>
                 <div><img src={work1}/></div>

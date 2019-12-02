@@ -3,17 +3,16 @@ import "./style.css"
 import ipad from "../../assets/images/ipad.png";
 import iphone from "../../assets/images/iphone.png";
 
+import Section from '../../Section';
 
 function UniqueDesign(){
     return(
         <section className='UniqueDesign'>
             <div className='feature'>
-
-                <div className='section'>
-                    <div className="section_suptitle">For all devices</div>
-                    <div className='section_title'>Unique design</div>  
-                                  
-                </div>
+                <Section
+                    suptitle='For all devices' 
+                    title='Unique design' 
+                />
 
                 <div className='devices'>
                     <div className='ipad'><img src={ipad}></img></div>

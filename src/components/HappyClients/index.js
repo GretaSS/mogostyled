@@ -4,16 +4,15 @@ import matthew from '../../assets/images/matthew.png';
 import nick from '../../assets/images/nick.png';
 import jaelynn from '../../assets/images/jaelynn.png';
 import mike from '../../assets/images/mike.png';
+import Section from "../../Section";
+
 
 function HappyClients(){
     return(
         <section className='HappyClients'>
             <div className='peoplesay'>
-                <div className='section'>
-                    <div className="section_suptitle">Happy Clients</div>
-                    <div className='section_title'>What People Say</div>                 
-                </div>
-
+                <Section suptitle="Happy Clients" title="Happy Clients"/>
+                
                 <div className='sec2'>
 
                     <div className='clients'>

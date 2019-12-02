@@ -24,6 +24,7 @@
     font-weight: bold;
     line-height: 2.5;
 }
+
 .section .section_title:after {
     content: "";
     display: block;
@@ -34,7 +35,7 @@
 }
 
 
- .lorem {
+.lorem {
     text-align: center;
     font-family: 'Arial';
     font-size: 15pt;

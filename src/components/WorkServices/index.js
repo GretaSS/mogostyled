@@ -7,16 +7,15 @@ import icon4 from "../../assets/images/4.png"
 import icon5 from "../../assets/images/5.png"
 import icon6 from "../../assets/images/6.png"
 
+import Section from '../../Section';
 
 function WorkServices(){
     return(
         <div className="WorkServices">
-
-            <div className='section'>
-                <div className="section_suptitle">We work with</div>
-                <div className='section_title'>Amazing services</div>                
-            </div>
-
+            <Section 
+                suptitle='We work with'
+                title='Amazing services'
+            />
 
             <div className='services'>
                 <div className='services_items'>

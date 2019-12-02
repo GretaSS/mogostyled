@@ -5,15 +5,13 @@ import jan14 from "../../assets/images/jan14.jpg";
 import jan12 from "../../assets/images/jan12.jpg";
 import comment from '../../assets/images/comment.png';
 import seen from '../../assets/images/seen.png';
+import Section from '../../Section';
 
 
 function OurStoryes(){
     return(
         <div className="OurStoryes">
-            <div className='section'>
-                <div className="section_suptitle">Our Storyes</div>
-                <div className='section_title'>Latest Blog</div>                
-            </div>
+            <Section suptitle='Our Storyes' title='Latest Blog' />
 
             <div className='blog-item'>
                 <div className='item-calendar'>

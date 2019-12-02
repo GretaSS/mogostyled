@@ -10,14 +10,17 @@ import teamlogo4 from '../../assets/images/teamlogo4.png';
 import teamlogo5 from '../../assets/images/teamlogo5.png';
 import teamlogo6 from '../../assets/images/teamlogo6.png';
 
+import Section from '../../Section';
+
 function OurTeam (){
     return(
         <div className = 'OurTeam'>
-            <div className='section'>
-                <div className="section_suptitle">Whu we are</div>
-                <div className='section_title'>Meet our team</div>  
-                <p className="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>              
-            </div>
+            <Section 
+                suptitle='Whu we are' 
+                title='Meet our team' 
+                text='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+            />
+
             <div className ='team-items'>
                 <div>
                     <div className="about-img">
