@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 import { 
   Header, 
   Intro, 
-  Container, 
+  Cont, 
   OurProgress, 
   WorkServices, 
   UniqueDesign, 
@@ -23,7 +23,7 @@ function App() {
     <div className="App">
       <Header/>
       <Intro/>
-      <Container/>
+      <Cont/>
       <OurProgress/>
       <WorkServices/>
       <UniqueDesign/> 

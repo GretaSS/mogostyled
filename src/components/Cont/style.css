@@ -1,15 +1,9 @@
-.Container {
+/* .Cont {
     display: flex;
-    justify-content: space-between;
     margin: 0 auto;
-    max-width: 1200px;
-    padding: 15px;
     align-items: center;
     flex-direction: column;
-    background-color: white;
-    color: #000;
-}
-
+} */
 
 .section {
     width: 100%;
@@ -40,8 +34,7 @@
 }
 
 
-
-.Container .lorem {
+ .lorem {
     text-align: center;
     font-family: 'Arial';
     font-size: 15pt;

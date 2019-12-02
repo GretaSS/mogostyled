@@ -1,5 +1,5 @@
 import Header from "./Header";
-import Container from './Container';
+import Cont from './Cont';
 import ImagesInner from './ImagesInner';
 import Intro from './Intro';
 import OurProgress from './OurProgress';
@@ -16,7 +16,7 @@ import Footer from './Footer';
 
 export {
     Header,
-    Container,
+    Cont,
     ImagesInner,
     Intro,
     OurProgress,
