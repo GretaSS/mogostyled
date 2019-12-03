@@ -25,14 +25,12 @@ import binsta6 from '../../assets/images/binsta6.jpg';
 import binsta7 from '../../assets/images/binsta7.jpg';
 import binsta8 from '../../assets/images/binsta8.jpg';
 import binsta9 from '../../assets/images/binsta9.jpg';
-import AbMogo from '../AbMogo';
-import AbBlog from '../AbBlog';
 
 function Footer(){
     return(
         <View flex alignI='center' flexD='column'>
             <View flex justC='space-between' alignI='center' m='74px auto 70px' maxW='1200px'>
-                {/* <div className='ab-mogo'>
+                <div className='ab-mogo'>
                     <div className='ab-logo'>MoGo</div>
                     <div className='ab-lorem'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
                     <div className='ab-numfollow'><span>15k</span> followers</div>
@@ -51,9 +49,30 @@ function Footer(){
                         <input placeholder='Your Email...'/>
                         <button>SUBSCRIBE</button>
                     </div>
-                </div> */}
-                <AbMogo/>
-                <AbBlog/>
+                    
+                </div>
+
+                <div className='blog'>
+                    <div className='blog-logo'>BLOGS</div>
+                    <div className='blog-item'>
+                        <img src={fblog1}/>
+                        <div className='blog-item-text'>Lorem ipsum dolor sit amet, consectetur adipiscing
+                            <div>Jan 9, 2016</div>
+                        </div>
+                    </div>
+                    <div className='blog-item'>
+                        <img src={fblog2}/>
+                        <div className='blog-item-text'>Consectetur adipiscing elit, sed do eiusmod tempor
+                            <div>Jan 9, 2016</div>
+                        </div>
+                    </div>
+                    <div className='blog-item'>
+                        <img src={fblog3}/>
+                        <div className='blog-item-text '>sed do eiusmod tempor incididunt ut labore
+                            <div>Jan 9, 2016</div>
+                        </div>
+                    </div>
+                </div>
 
                 <div className='instagram'>
                     <div className='insta-logo'>INSTAGRAM</div>

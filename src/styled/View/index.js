@@ -10,9 +10,14 @@ const size = ({w, h, minW, maxW, minH, maxH, lineH}) => `
   ${ lineH ? `line-height: ${lineH}` : "" };
 `;
 
-const marginPadding = ({m, p}) => `
+const marginPadding = ({m, p, mT, mB, mL, mR}) => `
   ${ m ? `margin: ${m}` : "" };
   ${ p ? `padding: ${p}` : "" };
+  ${ mT ? `margin-top: ${mT}` : "" };
+  ${ mB ? `margin-bottom: ${mB}` : "" };
+  ${ mL ? `margin-left: ${mL}` : "" };
+  ${ mR ? `margin-right: ${mR}` : "" };
+
 `;
 
 const fonts = ({fontF, fontSize, fontW, fontStyle, fontStretch}) => `
@@ -89,10 +94,11 @@ const flexBox = ({flex, flexD, flexW, flexF, flexG, flexS, flexB, order, justC, 
   ${ alignC ? `align-content: ${alignC}` : "" }
 `;
 
-const other =({boxS, overflow, color}) =>`
+const other =({boxS, overflow, color, op}) =>`
   ${ boxS ? `box-sizing: ${boxS}` : "" };
   ${ overflow ? `overflow : ${overflow}` : "" };
   ${ color ? `color: ${color}` : "" };
+  ${ op ? `opacity: ${op}` : "" };
 `;
 
 const View = styled.div `

@@ -1,5 +1,5 @@
 import React from 'react';
-import "./style.css";
+// import "./style.css";
 import ImagesInner from "../ImagesInner";
 import Section from '../../Section';
 import View from '../../styled/View';
@@ -14,7 +14,7 @@ function Cont(){
                 debitis blanditiis temporibusveniam vitae facilis nihil consectetur nostrum reprehenderit'
             />
             <ImagesInner/>
-        </View>  
+        </View>
     )
 }
 
