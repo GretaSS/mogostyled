@@ -1,20 +1,6 @@
 import React from 'react'
-import './style.css';
-import View from '../../styled/View';
 import styled from 'styled-components';
-
-import fblog1 from '../../assets/images/fblog1.png';
-import fblog2 from '../../assets/images/fblog2.png';
-import fblog3 from '../../assets/images/fblog3.png';
-
-import facebook from '../../assets/images/facebook.png';
-import twetter from '../../assets/images/twetter.png';
-import instagram from '../../assets/images/instagram.png';
-import pinterest from '../../assets/images/pinterest.png';
-import youtube from '../../assets/images/youtube.png';
-import wiki from '../../assets/images/wiki.png';
-import t from '../../assets/images/t.png';
-
+import View from '../../styled/View';
 
 import binsta1 from '../../assets/images/binsta1.jpg';
 import binsta2 from '../../assets/images/binsta2.jpg';
@@ -26,75 +12,34 @@ import binsta7 from '../../assets/images/binsta7.jpg';
 import binsta8 from '../../assets/images/binsta8.jpg';
 import binsta9 from '../../assets/images/binsta9.jpg';
 
-function Footer(){
+const Link = styled.a`
+    text-decoration: none;
+    font-style: italic;
+    font-size: 12px;
+`;
+
+const Img =styled.img`
+    margin: 2px;
+`;
+
+function AbInsta(){
     return(
-        <View flex alignI='center' flexD='column'>
-            <View flex justC='space-between' alignI='center' m='74px auto 70px' maxW='1200px'>
-                <div className='ab-mogo'>
-                    <div className='ab-logo'>MoGo</div>
-                    <div className='ab-lorem'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-                    <div className='ab-numfollow'><span>15k</span> followers</div>
-                    <hr/>
-                    <div className='ab-follow'>
-                        <span>Follow Us:</span>
-                        <img src={facebook}/>
-                        <img src={twetter}/>
-                        <img src={instagram}/>
-                        <img src={pinterest}/>
-                        <img src={youtube}/>
-                        <img src={wiki}/>
-                        <img src={t}/>
-                    </div>
-                    <div className='ab-input'>
-                        <input placeholder='Your Email...'/>
-                        <button>SUBSCRIBE</button>
-                    </div>
-                    
-                </div>
-
-                <div className='blog'>
-                    <div className='blog-logo'>BLOGS</div>
-                    <div className='blog-item'>
-                        <img src={fblog1}/>
-                        <div className='blog-item-text'>Lorem ipsum dolor sit amet, consectetur adipiscing
-                            <div>Jan 9, 2016</div>
-                        </div>
-                    </div>
-                    <div className='blog-item'>
-                        <img src={fblog2}/>
-                        <div className='blog-item-text'>Consectetur adipiscing elit, sed do eiusmod tempor
-                            <div>Jan 9, 2016</div>
-                        </div>
-                    </div>
-                    <div className='blog-item'>
-                        <img src={fblog3}/>
-                        <div className='blog-item-text '>sed do eiusmod tempor incididunt ut labore
-                            <div>Jan 9, 2016</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div className='instagram'>
-                    <div className='insta-logo'>INSTAGRAM</div>
-                    <div className='insta-images'>
-                        <img src={binsta1}/>
-                        <img src={binsta2}/>
-                        <img src={binsta3}/>
-                        <img src={binsta4}/>
-                        <img src={binsta5}/>
-                        <img src={binsta6}/>
-                        <img src={binsta7}/>
-                        <img src={binsta8}/>
-                        <img src={binsta9}/> 
-                    </div>
-                    <div className='insta-a'><a href='#'>View more photos</a> </div>
-                </div>
-                
-            </View> 
-            <hr/>
-            <View>© 2016 MoGo free PSD template by <span>Laaqiq</span> </View>
-        </View>
+        <View w='276px' h='355px'>
+            <View m='0 auto 34px' fontW='bold' op='0.7'>INSTAGRAM</View>
+            <View>
+                <Img src={binsta1}/> 
+                <Img src={binsta2}/>
+                <Img src={binsta3}/>
+                <Img src={binsta4}/>
+                <Img src={binsta5}/>
+                <Img src={binsta6}/>
+                <Img src={binsta7}/>
+                <Img src={binsta8}/>
+                <Img src={binsta9}/> 
+            </View>
+            <View mT='10px'><Link href='#'>View more photos</Link></View>
+        </View> 
     )
 }
 
-export default Footer;
+export default AbInsta;

@@ -1,39 +1,71 @@
 import React from "react";
-import "./style.css"
+import View from '../../styled/View';
 
-function OurProgress(){
-    return(
-        <div className="OurProgress">
-            <div className="progress-item">
-                <div className="span_div">
-                    <span>42</span> <div>WEB DESIGN PROJECTS</div>
-                </div>    
-            </div>
-            
-            <div className="progress-item">
-                <div className="span_div">
-                    <span>123</span> <div>HAPPY CLIENT</div>
-                </div>     
-            </div>
-
-            <div className="progress-item">
-                <div className="span_div">
-                    <span>15</span> <div>AWARD WINNER</div>
-                </div>   
-            </div>
-
-            <div className="progress-item">
-                <div className="span_div">
-                    <span>99</span> <div>CUP OF COFFEE</div>
-                </div>
-            </div>
-            
-            <div className="progress-item last_progress_item">
-                <div className="span_div">
-                <span>24</span> <div>MEMBERS</div> 
-                </div>
-            </div> 
-        </div>
-    )
+class OurProgress extends React.Component{
+    constructor(props){
+        super(props);
+        this.state = {
+            intro: [
+                {
+                    num: 42,
+                    text: 'WEB DESIGN PROJECTS',
+                },
+                {
+                    num: 123,
+                    text: 'HAPPY CLIENT',
+                },
+                {
+                    num: 15,
+                    text: 'AWARD WINNER',
+                },
+                {
+                    num: 99,
+                    text: 'CUP OF COFFEE',
+                },
+                {
+                    num: 24,
+                    text: 'MEMBERS',
+                }
+            ]
+        }
+    }
+    renderProgressItem = () => (
+        this.state.intro.map( (item, index) => (
+            <View>
+                {(index == 4 ) ? 
+                    (<View key={index} flex h='100%' w='240px' c='white' justC='center' tALign='center' bL='solid #b5eae0 2px' bR='solid #b5eae0 2px'>
+                        <View p='70px 25px' alignI='center'>
+                            <View fontSize='65pt' fontF="'Montserrat'" fontW='bold' c='white' tAlign='center'>
+                                {item.num}
+                            </View>
+                            <View fontSize='10pt' fontF="'Montserrat'">
+                                {item.text}
+                            </View>
+                        </View>
+                    </View>
+                    )
+                    : (<View key={index} flex h='100%' w='240px' c='white' justC='center' tALign='center' bL='solid #b5eae0 2px'>
+                            <View p='70px 25px' alignI='center'>
+                                <View fontSize='65pt' fontF="'Montserrat'" fontW='bold' c='white' tAlign='center'>
+                                    {item.num}
+                                </View>
+                                <View fontSize='10pt' fontF="'Montserrat'">
+                                    {item.text}
+                                </View>
+                            </View>
+                        </View>
+                    ) 
+                }
+            </View>
+        )
+    ))
+    render(){
+        return(
+            <View flex justC='center' alignI='center' mT='50px' bgColor='#95e1d3' h='300px'>
+                {this.renderProgressItem()}
+            </View>
+        )
+    }
+    
 }
 export default OurProgress

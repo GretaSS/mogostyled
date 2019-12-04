@@ -31,9 +31,9 @@ const MLink = styled.a`
 
 function Header() {
     return(
-        <View w='100%' position='absolute'>
+        <View w='100%' pos='absolute'>
             <View flex m='30px auto' p='15px' maxW='1200px' alignI='center' justC='space-between'> 
-                <View color='white' m='15px 0px' fontSize='30px' fontW='700' fontF="'Montserrat Bold', sans-serif">MoGo</View> 
+                <View c='white' m='15px 0px' fontSize='30px' fontW='700' fontF="'Montserrat Bold', sans-serif">MoGo</View> 
                 <Menu>
                     <Link><MLink href="#">About</MLink></Link>
                     <Link><MLink href="#">Service</MLink></Link>

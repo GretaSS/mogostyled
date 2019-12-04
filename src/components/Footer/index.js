@@ -1,79 +1,29 @@
 import React from 'react'
-import './style.css';
-import View from '../../styled/View';
 import styled from 'styled-components';
+import View from '../../styled/View';
+import Text from '../../styled/Text';
 
-import fblog1 from '../../assets/images/fblog1.png';
-import fblog2 from '../../assets/images/fblog2.png';
-import fblog3 from '../../assets/images/fblog3.png';
-
-import facebook from '../../assets/images/facebook.png';
-import twetter from '../../assets/images/twetter.png';
-import instagram from '../../assets/images/instagram.png';
-import pinterest from '../../assets/images/pinterest.png';
-import youtube from '../../assets/images/youtube.png';
-import wiki from '../../assets/images/wiki.png';
-import t from '../../assets/images/t.png';
-
-
-import binsta1 from '../../assets/images/binsta1.jpg';
-import binsta2 from '../../assets/images/binsta2.jpg';
-import binsta3 from '../../assets/images/binsta3.jpg';
-import binsta4 from '../../assets/images/binsta4.jpg';
-import binsta5 from '../../assets/images/binsta5.jpg';
-import binsta6 from '../../assets/images/binsta6.jpg';
-import binsta7 from '../../assets/images/binsta7.jpg';
-import binsta8 from '../../assets/images/binsta8.jpg';
-import binsta9 from '../../assets/images/binsta9.jpg';
 import AbMogo from '../AbMogo';
 import AbBlog from '../AbBlog';
+import AbInsta from '../AbInsta';
+
+const Hr = styled.hr`
+    background-color: #e5e5e59f;
+    opacity: 0.3;
+    width: 1192px;
+    height: 0.1px;
+`;
 
 function Footer(){
     return(
-        <View flex alignI='center' flexD='column'>
+        <View flex alignI='center' fD='column'>
             <View flex justC='space-between' alignI='center' m='74px auto 70px' maxW='1200px'>
-                {/* <div className='ab-mogo'>
-                    <div className='ab-logo'>MoGo</div>
-                    <div className='ab-lorem'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-                    <div className='ab-numfollow'><span>15k</span> followers</div>
-                    <hr/>
-                    <div className='ab-follow'>
-                        <span>Follow Us:</span>
-                        <img src={facebook}/>
-                        <img src={twetter}/>
-                        <img src={instagram}/>
-                        <img src={pinterest}/>
-                        <img src={youtube}/>
-                        <img src={wiki}/>
-                        <img src={t}/>
-                    </div>
-                    <div className='ab-input'>
-                        <input placeholder='Your Email...'/>
-                        <button>SUBSCRIBE</button>
-                    </div>
-                </div> */}
                 <AbMogo/>
                 <AbBlog/>
-
-                <div className='instagram'>
-                    <div className='insta-logo'>INSTAGRAM</div>
-                    <div className='insta-images'>
-                        <img src={binsta1}/>
-                        <img src={binsta2}/>
-                        <img src={binsta3}/>
-                        <img src={binsta4}/>
-                        <img src={binsta5}/>
-                        <img src={binsta6}/>
-                        <img src={binsta7}/>
-                        <img src={binsta8}/>
-                        <img src={binsta9}/> 
-                    </div>
-                    <div className='insta-a'><a href='#'>View more photos</a> </div>
-                </div>
-                
+                <AbInsta/>
             </View> 
-            <hr/>
-            <View>© 2016 MoGo free PSD template by <span>Laaqiq</span> </View>
+            <Hr/>
+            <View fontW='500' fontSize='14px'>© 2016 MoGo free PSD template by <Text color='#ff8585'>Laaqiq</Text> </View>
         </View>
     )
 }

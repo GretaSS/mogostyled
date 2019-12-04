@@ -1,11 +1,9 @@
 import React from 'react'
-// import './style.css';
 import View from '../../styled/View';
 
 import fblog1 from '../../assets/images/fblog1.png';
 import fblog2 from '../../assets/images/fblog2.png';
 import fblog3 from '../../assets/images/fblog3.png';
-
 
 class AbBlog extends React.Component{
     constructor(props){
@@ -29,10 +27,10 @@ class AbBlog extends React.Component{
     }
     renderBlogItem = () => (
         this.state.intro.map( (item) => (
-            <View mT='30px' w='345px'>
+            <View mT='30px' w='345px' flex>
                 <img src={item.src}/>
-                <View mL='20px' textTf='uppercase' fontSize='12px' fontW='bold' lineH='1.5'>{item.text}
-                    <View fontW='200' fontStyle='italic' op='0.6' textTf='capitalize'>Jan 9, 2016</View>
+                <View mL='20px' tTf='uppercase' fontSize='12px' fontW='bold' lh='1.5'>{item.text}
+                    <View fontW='200' fontStyle='italic' op='0.6' tTf='capitalize'>Jan 9, 2016</View>
                 </View>
             </View>
         ))

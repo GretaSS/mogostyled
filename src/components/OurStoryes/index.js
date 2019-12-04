@@ -62,7 +62,6 @@ function OurStoryes(){
                     </div>
                 </div> 
             </div>
-                     
         </div>
     )
 }

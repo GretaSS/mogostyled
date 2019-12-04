@@ -10,9 +10,14 @@ const size = ({w, h, minW, maxW, minH, maxH, lineH}) => `
   ${ lineH ? `line-height: ${lineH}` : "" };
 `;
 
-const marginPadding = ({m, p}) => `
+const marginPadding = ({m, p, mT, mB, mL, mR}) => `
   ${ m ? `margin: ${m}` : "" };
   ${ p ? `padding: ${p}` : "" };
+  ${ mT ? `margin-top: ${mT}` : "" };
+  ${ mB ? `margin-bottom: ${mB}` : "" };
+  ${ mL ? `margin-left: ${mL}` : "" };
+  ${ mR ? `margin-right: ${mR}` : "" };
+
 `;
 
 const fonts = ({fontF, fontSize, fontW, fontStyle, fontStretch}) => `
@@ -74,6 +79,13 @@ const backgrounds = ({bg, bgImg, bgPos, bgRep, bgSize, bgColor, bgClip, bgOr, bg
   ${ bgAt ? `background-attachment: ${bgAt}` : "" };
 `;
 
+const other =({overflow, color, op}) =>`
+
+  ${ overflow ? `overflow : ${overflow}` : "" };
+  ${ color ? `color: ${color}` : "" };
+  ${ op ? `opacity: ${op}` : "" };
+`;
+
 const Text = styled.span `
   ${ size }
   ${ fonts }
@@ -82,6 +94,7 @@ const Text = styled.span `
   ${ positions }
   ${ backgrounds }
   ${ border }
+  ${ other }
 `;
 
 export default Text;
