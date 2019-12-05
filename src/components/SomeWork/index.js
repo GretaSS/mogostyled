@@ -1,5 +1,5 @@
 import React from 'react';
-import './style.css';
+// import './style.css';
 import styled from "styled-components";
 import View from '../../styled/View';
 
@@ -12,6 +12,32 @@ import work6 from '../../assets/images/work-6.jpg';
 import work7 from '../../assets/images/work-7.jpg';
 import Section from '../../Section';
 
+const Picdiv = styled.div`
+    width: 480px;
+    height: 390px;
+    background: linear-gradient(to bottom,#f57f7f,#fce38a);
+    transition: transform .2s linear; 
+    &:hover{
+        transform: translate3d(-10px, -10px, 0) ;
+    }
+`;
+
+const Piclong = styled.div`
+    width: 480px;
+    height: 780px;
+    background: linear-gradient(to bottom,#f57f7f,#fce38a);
+    transition: transform .2s linear;
+    &:hover{
+        transform: translate3d(-10px, -10px, 0) ;
+    }
+`;
+
+const Imgop = styled.img`
+    &:hover{
+        opacity: .1;
+    }
+`;
+
 function SomeWork(){
     return(
         <View mT='100px'>
@@ -22,13 +48,13 @@ function SomeWork(){
             />
 
             <View flex h='780px' fF='wrap' fD='column'>
-                <div><img src={work1}/></div>
-                <div><img src={work3}/></div>
-                <div><img src={work2}/></div>
-                <div><img src={work4}/></div>
-                <div className='long'><img src={work5}/></div>
-                <div><img src={work6}/></div>
-                <div><img src={work7}/></div>
+                <Picdiv><Imgop src={work1}/></Picdiv>
+                <Picdiv><Imgop src={work3}/></Picdiv>
+                <Picdiv><Imgop src={work2}/></Picdiv>
+                <Picdiv><Imgop src={work4}/></Picdiv>
+                <Piclong><Imgop src={work5}/></Piclong>
+                <Picdiv><Imgop src={work6}/></Picdiv>
+                <Picdiv><Imgop src={work7}/></Picdiv>
             </View>
         </View>
     )

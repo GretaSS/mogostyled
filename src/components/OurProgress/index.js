@@ -31,9 +31,9 @@ class OurProgress extends React.Component{
     }
     renderProgressItem = () => (
         this.state.intro.map( (item, index) => (
-            <View>
+            <View key={index}>
                 {(index == 4 ) ? 
-                    (<View key={index} flex h='100%' w='240px' c='white' justC='center' tALign='center' bL='solid #b5eae0 2px' bR='solid #b5eae0 2px'>
+                    (<View flex h='100%' w='240px' c='white' justC='center' tALign='center' bL='solid #b5eae0 2px' bR='solid #b5eae0 2px'>
                         <View p='70px 25px' alignI='center'>
                             <View fontSize='65pt' fontF="'Montserrat'" fontW='bold' c='white' tAlign='center'>
                                 {item.num}
@@ -44,7 +44,7 @@ class OurProgress extends React.Component{
                         </View>
                     </View>
                     )
-                    : (<View key={index} flex h='100%' w='240px' c='white' justC='center' tALign='center' bL='solid #b5eae0 2px'>
+                    : (<View flex h='100%' w='240px' c='white' justC='center' tALign='center' bL='solid #b5eae0 2px'>
                             <View p='70px 25px' alignI='center'>
                                 <View fontSize='65pt' fontF="'Montserrat'" fontW='bold' c='white' tAlign='center'>
                                     {item.num}

@@ -1,5 +1,5 @@
 import React from "react";
-import "./style.css";
+import View from '../../styled/View';
 import service from '../../assets/images/services.jpg';
 import ServiceIntro from '../ServiceIntro';
 import ServiceSlider from '../ServiceSlider';
@@ -10,7 +10,7 @@ class Service extends React.Component {
 
     render(){
     return(
-        <div className="Service">
+        <View flex justC='space-between' alignI='center' fD='column'>
             <Section 
                 suptitle='Service' 
                 title='What we do' 
@@ -18,13 +18,13 @@ class Service extends React.Component {
                 debitis blanditiis temporibusveniam vitae facilis nihil consectetur.'
             />
 
-            <div className='container'>
+            <View flex justC='space-between' alignI='center' m='0 auto' p='15px' maxW='1200px'>
                 <img src={service}></img>
                 <ServiceIntro/>
-            </div>
+            </View>
             
             <ServiceSlider/>
-        </div>
+        </View>
     )
     }
 }

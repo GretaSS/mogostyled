@@ -28,9 +28,9 @@ class ServiceSlider extends React.Component{
         }
     }
     renderSliderItem = () => ( 
-        this.state.intro.map( (item) => ( 
+        this.state.intro.map( (item, index) => ( 
             this.state.showId == item.id && 
-            <div className='slider'>
+            <div key={index} className='slider'>
                 <button className='left' onClick = { () => this.leftItem(item.id)}>&#60;</button>
                     <div className='slider-intro'>
                         <img src={citate}/>

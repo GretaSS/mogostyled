@@ -37,7 +37,7 @@ function AbMogo(){
         <View w='464px'>
             <View fontSize='46px' fontW='800' op='0.2'>MoGo</View>
             <Text fontSize='13.7px' m='20px 0 42px' lh='2' op='0.6'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</Text>
-            <Text><Text fontW='bold' fontSize='20px'>15k</Text>followers</Text>
+            <Text><Text fontW='bold' fontSize='20px'> 15k</Text> followers</Text>
             <Hr/>
             <View flex justC='space-between' alignI='center' w='310px' mT='15px' fontStyle='italic'>
                 <Text>Follow Us:</Text>

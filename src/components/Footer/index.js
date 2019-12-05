@@ -23,7 +23,7 @@ function Footer(){
                 <AbInsta/>
             </View> 
             <Hr/>
-            <View fontW='500' fontSize='14px'>© 2016 MoGo free PSD template by <Text color='#ff8585'>Laaqiq</Text> </View>
+            <View fontW='500' fontSize='14px'>© 2016 MoGo free PSD template by <Text c='#ff8585'>Laaqiq</Text> </View>
         </View>
     )
 }

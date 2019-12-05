@@ -1,71 +1,85 @@
 import React from 'react';
-import './style.css';
+import styled from "styled-components";
+import View from '../../styled/View';
+import Section from '../../Section';
+
 import matthew from '../../assets/images/matthew.jpg';
 import christopher from '../../assets/images/christopher.jpg';
 import michael from '../../assets/images/michael.jpg';
-import teamlogo1 from '../../assets/images/teamlogo1.png';
-import teamlogo2 from '../../assets/images/teamlogo2.png';
-import teamlogo3 from '../../assets/images/teamlogo3.png';
-import teamlogo4 from '../../assets/images/teamlogo4.png';
-import teamlogo5 from '../../assets/images/teamlogo5.png';
-import teamlogo6 from '../../assets/images/teamlogo6.png';
 
-import Section from '../../Section';
+import HypsterLogos from '../HypsterLogos'
 
-function OurTeam (){
-    return(
-        <div className = 'OurTeam'>
-            <Section 
-                suptitle='Whu we are' 
-                title='Meet our team' 
-                text='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
-            />
+const Abimg = styled(View)`
+    width: 380px;
+    margin-right: 35px;
+    background: linear-gradient(to bottom,#f57f7f,#fce38a);
+    transition: transform .2s linear;
+    &:hover{
+        transform: translate3d(-10px, -10px, 0);
+    }
+`;
+const Img = styled.img`
+    display: block;
+    &:hover{
+        opacity: .1;
+    }
+`;
 
-            <div className ='team-items'>
-                <div>
-                    <div className="about-img">
-                        <div><img src={matthew}/></div>
-                    </div>
-                    <div className='team-items-names'>
-                        MATTEW DIX
-                        <div>Graphic Design</div>
-                    </div>
-                </div>
+class OurTeam extends React.Component {
+    constructor(props){
+        super(props);
+        this.state ={
+            intro: [
+                {
+                    src: matthew,
+                    name: 'MATTEW DIX',
+                    prof: 'Graphic Design',
+                },
+                {
+                    src: christopher,
+                    name: 'CHRISTOPHER CAMPBELL',
+                    prof: 'Branding UX Design',
+                },
+                {
+                    src: michael,
+                    name: 'MICHAEL FERTIC',
+                    prof: 'Developer',
+                },
+            ]
+        }
+    }
 
-                <div>
-                    <div className="about-img">
-                        <div> <img src={christopher}/></div>
-                    </div> 
-                    <div className='team-items-names'>
-                        CHRISTOPHER CAMPBELL
-                        <div>Branding UX Design</div>
-                    </div>
-                </div>
+    renderTeamItems = () => (
+        this.state.intro.map( (item, index) => (
+            <View key={index}>
+                <View bgColor='#95e1d3' mR='53px' w='380px'>
+                    <Abimg><Img src={item.src}/></Abimg>
+                </View>
 
-                <div>
-                    <div className="about-img">
-                        <div><img src={michael}/></div> 
-                    </div>  
-                    <div className='team-items-names'>
-                        MICHAEL FERTIC
-                        <div>Developer</div>
-                    </div>  
-                </div>               
-            </div>
-
-            <div className='team-logos-back'>
-                <div className='team-logos'>
-                    <img src={teamlogo1} alt='teamlogo'/>
-                    <img src={teamlogo2} alt='teamlogo'/>
-                    <img src={teamlogo3} alt='teamlogo'/>
-                    <img src={teamlogo4} alt='teamlogo'/>
-                    <img src={teamlogo5} alt='teamlogo'/>
-                    <img src={teamlogo6} alt='teamlogo'/>
-                </div>
-            </div>
-            
-        </div>
+                <View flex fD='column' justC='space-around' alignI='center' mT='20px' mR='53px' fontSize='18px' fontF="'Montserrat'">
+                    {item.name}
+                    <View op='0.5' lH='2' fontSize='15px' fontStyle='italic'>{item.prof}</View>
+                </View>
+            </View>
+        ) )
     )
+
+
+    render(){
+        return(
+            <View>
+                <Section 
+                    suptitle='Whu we are' 
+                    title='Meet our team' 
+                    text='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+                />
+                <View flex justC='space-between' alignI='center' m='0 auto' maxW='1200px'>
+                    {this.renderTeamItems()}
+                </View>
+                <HypsterLogos/>
+            </View>
+        )
+    }
 }
 
 export default OurTeam;
