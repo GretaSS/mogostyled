@@ -64,7 +64,7 @@ const border = ({border, bW, bT, bB, bL, bR, bStyle, bRad, captionS, bColl, bCol
   ${ bL ? `border-left: ${bL}` : "" };
   ${ bR ? `border-right: ${bR}` : "" };
   ${ bStyle ? `border-style: ${bStyle}` : "" };
-  ${ bRad ? `border-radius: ${BRad}` : "" };
+  ${ bRad ? `border-radius: ${bRad}` : "" };
   ${ captionS ? `caption-side: ${captionS}` : "" };
   ${ bColl ? `border-collapse: ${bColl}` : ""};
   ${ bColor ? `border-color: ${bColor}` : "" }

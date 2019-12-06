@@ -1,5 +1,7 @@
 import React from "react";
-import "./style.css"
+import styled from "styled-components";
+import View from '../../styled/View';
+import feature from '../../assets/images/feature.jpg';
 import ipad from "../../assets/images/ipad.png";
 import iphone from "../../assets/images/iphone.png";
 
@@ -7,20 +9,20 @@ import Section from '../../Section';
 
 function UniqueDesign(){
     return(
-        <section className='UniqueDesign'>
-            <div className='feature'>
+        <View flex justC='space-between' alignI='center' fD='column' w='100%'>
+            <View bgImg={feature} flex w='100%' h='100vh' bgRep='no-repeat' bgSize='cover'>
                 <Section
                     suptitle='For all devices' 
                     title='Unique design' 
                 />
 
-                <div className='devices'>
-                    <div className='ipad'><img src={ipad}></img></div>
-                    {/* <div className='iphone'> <img src={iphone}></img> </div> */}
-                </div>
+                <View flex justC='space-between' alignI='flex-end' maxW='600px' m='0 auto' >
+                    <View order='0' f='2'><img src={ipad}></img></View>
+                    {/* <View><img src={iphone}></img></View> */}
+                </View>
 
-            </div> 
-        </section>
+            </View> 
+        </View>
     )
 }
 export default UniqueDesign

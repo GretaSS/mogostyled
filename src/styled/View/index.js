@@ -84,8 +84,9 @@ const backgrounds = ({bg, bgImg, bgPos, bgRep, bgSize, bgColor, bgClip, bgOr, bg
   ${ bgAt ? `background-attachment: ${bgAt}` : "" };
 `;
 
-const flexBox = ({flex, fD, fW, fF, fG, fSh, fB, order, justC, alignI, alignS, alignC}) => `
+const flexBox = ({flex, f, fD, fW, fF, fG, fSh, fB, order, justC, alignI, alignS, alignC}) => `
   ${ flex ? `display: flex` : "" };
+  ${ f ? `flex: ${f}` : "" };
   ${ fD ? `flex-direction: ${fD}` : "" };
   ${ fW ? `flex-wrap: ${fW}` : "" };
   ${ fF ? `flex-flow: ${fF}` : "" };

@@ -1,14 +1,40 @@
 import React from 'react';
-import './style.css'
+// import './style.css'
+import styled from "styled-components";
+import View from '../../styled/View';
+import Text from '../../styled/Text';
 import photo from '../../assets/images/phtography.png';
 import creativ from '../../assets/images/creativity.png';
 import web from '../../assets/images/web.png';
 
-// import styled from "styled-components";
+const But = styled.button`
+    justify-content: flex-end;
+    border:none;
+    background-color:white;
+    opacity: 0.3;
+    font-size: 25px;
+    cursor: pointer;
+`;
 
-    
+const Scr = styled(Text)`
+    &:-webkit-scrollbar-track
+    {
+        border-radius: 10px;
+        background-color: #F5F5F5;
+    }
+    &:-webkit-scrollbar
+    {
+        width: 7px;
+        background-color: #F5F5F5;
+    }
+    &:-webkit-scrollbar-thumb
+    {
+        border-radius: 10px;
+        background-color: #95e1d3;
+    }
+`;
+
 class ServiceIntro extends React.Component{
-
     constructor(props) {
         super(props);
         // this.dropDown = this.dropDown.bind(this);
@@ -22,38 +48,33 @@ class ServiceIntro extends React.Component{
         }
       }
     
-      dropDown = ( id ) => {
+    dropDown = ( id ) => {
         this.setState( { showId: id } );
-      }
-
-    //   const Nav = styled.nav`
-    //         width: 600px;
-    //         margin-bottom: 10px;
-    //   `;
+    }
        
-      renderLogoNameText = () => (
-          this.state.navs.map( ( nav ) => (
-            <nav key = { nav.id } className ='intro-nav'>
-                <div className ='logo-h'>
-                    <img src = { nav.src }></img>
-                    <div> { nav.name } </div>
-                    <button className ='drop-arrow' onClick ={ () => this.dropDown(nav.id) }>&#8657;</button>
-                </div>
-                { this.state.showId == nav.id && 
-                    <div className ="scroll">
-                        <p> { nav.text } </p>
-                    </div>       
-                    //   context: "&#8659;" ;                       
+    renderLogoNameText = () => (
+          this.state.navs.map( ( item ) => (
+            <View key={item.id} w='600px' mB='7px'>
+                <View flex justC='space-between' p='15px' alignI='center' border='solid rgba(0, 0, 0, 0.068) 1px'>
+                    <img src = { item.src }></img>
+                    <View mL='15px' fontSize='15pt' tTf='uppercase'> { item.name } </View>
+                    <But onClick ={ () => this.dropDown(item.id) }>&#8657;</But>
+                </View>
+                { this.state.showId == item.id && 
+                    <View p='20px' font='14pt' border='solid rgba(0, 0, 0, 0.068) 1px' bT='none'>
+                        <Scr m='0' maxH='135px' overflow='auto' op='0.6'>{ item.text }</Scr>
+                    </View>       
+                    //   context: "&#8659;" ;
                 }
-            </nav>
+            </View>
         ))
-      )
+    )
 
     render(){
         return(
-            <div className='ServiceIntro'>
+            <View p='0 30px' h='380px'>
                 { this.renderLogoNameText() }
-            </div>  
+            </View>
         )
     }
 }

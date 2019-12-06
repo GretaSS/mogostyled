@@ -1,6 +1,18 @@
 import React from 'react';
-import './style.css';
+import styled from "styled-components";
+import View from '../../styled/View';
+import Text from '../../styled/Text';
 import citate from '../../assets/images/citate.png';
+
+const But = styled.button`
+    border: none;
+    outline: none;
+    width: 50px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 40px;
+    opacity: 0.5;
+`;
 
 class ServiceSlider extends React.Component{
     constructor(props){
@@ -30,17 +42,17 @@ class ServiceSlider extends React.Component{
     renderSliderItem = () => ( 
         this.state.intro.map( (item, index) => ( 
             this.state.showId == item.id && 
-            <div key={index} className='slider'>
-                <button className='left' onClick = { () => this.leftItem(item.id)}>&#60;</button>
-                    <div className='slider-intro'>
+            <View key={index} flex justC='center' alignI='center' m='0 auto' maxW='1200px'>
+                <But onClick = { () => this.leftItem(item.id)}>&#60;</But>
+                    <View flex justC='space-between' alignI='center' m='0 30px'>
                         <img src={citate}/>
-                        <div className='citate-autor'>
-                            <p> {item.text} </p>
-                            <div>-{item.name}</div>
-                        </div>
-                    </div>                
-                <button className='right' onClick = { () => this.rightItem(item.id+1)}>&#62;</button>   
-            </div>
+                        <View p='40px'>
+                            <Text fontSize="22px" fontF='Arial' fontStyle='italic' op='0.5'>{item.text}</Text>
+                            <View fontSize="25px" fontF="'Kaushan Script'">-{item.name}</View>
+                        </View>
+                    </View>
+                <But onClick = { () => this.rightItem(item.id+1)}>&#62;</But>
+            </View>
         ))
     )
     leftItem = (id) => {
@@ -55,9 +67,9 @@ class ServiceSlider extends React.Component{
     }
     render(){
         return(
-            <div className='ServiceSlider'>
+            <View bgColor='rgba(0, 0, 0, 0.082)' w='100%' h='240px' mT='145px'>
                 {this.renderSliderItem()}
-            </div>
+            </View>
         )
     }
 }
