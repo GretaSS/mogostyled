@@ -41,13 +41,13 @@ function FooterMogo(){
             <Hr/>
             <View flex justC='space-between' alignI='center' w='310px' mT='15px' fontStyle='italic'>
                 <Text>Follow Us:</Text>
-                <img src={facebook} alt='fb' />
-                <img src={twetter} alt='tw' />
-                <img src={instagram} alt='in' />
-                <img src={pinterest} alt='p' />
-                <img src={youtube} alt='y' />
-                <img src={wiki} alt='w' />
-                <img src={t} alt='t' />
+                <a href='#'><img src={facebook} alt='fb' /></a>
+                <a href='#'><img src={twetter} alt='tw' /></a>
+                <a href='#'><img src={instagram} alt='in' /></a>
+                <a href='#'><img src={pinterest} alt='p' /></a>
+                <a href='#'><img src={youtube} alt='y' /></a>
+                <a href='#'><img src={wiki} alt='w' /></a>
+                <a href='#'><img src={t} alt='t' /></a>
             </View>
             <View mT='41px'>
                 <Input placeholder='Your Email...'/>

@@ -35,7 +35,7 @@ function Header() {
             <View flex m='30px auto' p='15px' maxW='1200px' alignI='center' justC='space-between'> 
                 <View c='white' m='15px 0px' fontSize='30px' fontW='700' fontF="'Montserrat Bold', sans-serif">MoGo</View> 
                 <Menu>
-                    <Link><MLink href="#">About</MLink></Link>
+                    <Link><MLink href="/about">About</MLink></Link>
                     <Link><MLink href="#">Service</MLink></Link>
                     <Link><MLink href="#">Work</MLink></Link>
                     <Link><MLink href="#">Blog</MLink></Link>
