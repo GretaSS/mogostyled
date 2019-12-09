@@ -4,7 +4,7 @@ import service from '../../assets/images/services.jpg';
 import ServiceIntro from '../ServiceIntro';
 import ServiceSlider from '../ServiceSlider';
 
-import Section from '../../Section';
+import Section from '../Section';
 
 class Service extends React.Component {
 
@@ -19,7 +19,7 @@ class Service extends React.Component {
             />
 
             <View flex justC='space-between' alignI='center' m='0 auto' p='15px' maxW='1200px'>
-                <img src={service}></img>
+                <img src={service} alt='service'></img>
                 <ServiceIntro/>
             </View>
             

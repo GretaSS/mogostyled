@@ -7,7 +7,7 @@ import matthew from '../../assets/images/matthew.png';
 import nick from '../../assets/images/nick.png';
 import jaelynn from '../../assets/images/jaelynn.png';
 import mike from '../../assets/images/mike.png';
-import Section from "../../Section";
+import Section from '../Section';
 
 const Proff = styled(View)`
     &:after {
@@ -65,10 +65,10 @@ class HappyClients extends React.Component{
         this.state.clientsFirst.map( (item, index) => (
             <View key={index} flex m='30px' mR='0' pL='90px' w="800px">
                 <Pic src={item.src}/>
-                <View mL='15px'>
+                <View mL='15px' lh='1.5'>
                     <View mB='10px' fontF="'Montserrat'" fontW='600' op='0.7'>{item.name}</View>
                     <Proff op='0.7' fontStyle='italic'>{item.proff}</Proff>
-                    <View op='0.5' fontSize='17px' lH='1.5'>{item.lorem}</View>
+                    <View op='0.5' fontSize='17px' lh='1.5'>{item.lorem}</View>
                 </View>
             </View>
         ))
@@ -78,10 +78,10 @@ class HappyClients extends React.Component{
         this.state.clientsSecond.map( (item, index) => (
             <View key={index} flex m='30px' mR='0' pL='90px' w="800px">
                 <Pic src={item.src}/>
-                <View mL='15px'>
+                <View mL='15px' lh='1.5'>
                     <View mB='10px' fontF="'Montserrat'" fontW='600' op='0.7'>{item.name}</View>
                     <Proff op='0.7' fontStyle='italic'>{item.proff}</Proff>
-                    <View op='0.5' fontSize='17px' lH='1.5'>{item.lorem}</View>
+                    <View op='0.5' fontSize='17px' lh='1.5'>{item.lorem}</View>
                 </View>
             </View>
         ))

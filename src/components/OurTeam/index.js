@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
 import View from '../../styled/View';
-import Section from '../../Section';
+import Section from '../Section';
 
 import matthew from '../../assets/images/matthew.jpg';
 import christopher from '../../assets/images/christopher.jpg';
@@ -53,7 +53,7 @@ class OurTeam extends React.Component {
         this.state.intro.map( (item, index) => (
             <View key={index}>
                 <View bgColor='#95e1d3' mR='53px' w='380px'>
-                    <Abimg><Img src={item.src}/></Abimg>
+                    <Abimg><Img src={item.src} alt='img' /></Abimg>
                 </View>
 
                 <View flex fD='column' justC='space-around' alignI='center' mT='20px' mR='53px' fontSize='18px' fontF="'Montserrat'">

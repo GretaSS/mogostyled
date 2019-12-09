@@ -28,17 +28,17 @@ function ImagesInner(){
         <View flex justC='space-between'>
             <View bgColor='#95e1d3' mR='53px' w='380px'>
                 <Abimg>
-                    <Img src={img1}/>
+                    <Img src={img1} alt='img' />
                 </Abimg>
             </View>
             <View bgColor='#95e1d3' mR='53px' w='380px'>
                 <Abimg>
-                    <Img src={img2}/>
+                    <Img src={img2} alt='img' />
                 </Abimg>
             </View>
             <View bgColor='#95e1d3' mR='53px' w='380px'>
                 <Abimg>
-                    <Img src={img3}/>
+                    <Img src={img3} alt='img' />
                 </Abimg>
             </View>
         </View>

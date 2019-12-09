@@ -18,7 +18,7 @@ const LogoImg = styled.img`
 
 function HypsterLogos(){
     return(
-        <View bgC='#f8f8f8' flex justC='space-around' alignI='center' h='248px' mT='112px'>
+        <View bgColor='#f8f8f8' flex justC='space-around' alignI='center' h='248px' mT='112px'>
             <View flex justC='space-around' alignI='center' m='0 auto' maxW='1200px'>
                 <LogoImg src={teamlogo1} alt='teamlogo'/>
                 <LogoImg src={teamlogo2} alt='teamlogo'/>

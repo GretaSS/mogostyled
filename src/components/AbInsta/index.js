@@ -27,15 +27,15 @@ function AbInsta(){
         <View w='276px' h='355px'>
             <View m='0 auto 34px' fontW='bold' op='0.7'>INSTAGRAM</View>
             <View>
-                <Img src={binsta1}/> 
-                <Img src={binsta2}/>
-                <Img src={binsta3}/>
-                <Img src={binsta4}/>
-                <Img src={binsta5}/>
-                <Img src={binsta6}/>
-                <Img src={binsta7}/>
-                <Img src={binsta8}/>
-                <Img src={binsta9}/> 
+                <Img src={binsta1} alt='insta' /> 
+                <Img src={binsta2} alt='insta' />
+                <Img src={binsta3} alt='insta' />
+                <Img src={binsta4} alt='insta' />
+                <Img src={binsta5} alt='insta' />
+                <Img src={binsta6} alt='insta' />
+                <Img src={binsta7} alt='insta' />
+                <Img src={binsta8} alt='insta' />
+                <Img src={binsta9} alt='insta' /> 
             </View>
             <View mT='10px'><Link href='#'>View more photos</Link></View>
         </View> 

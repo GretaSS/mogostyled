@@ -8,7 +8,7 @@ import jan14 from "../../assets/images/jan14.jpg";
 import jan12 from "../../assets/images/jan12.jpg";
 import comment from '../../assets/images/comment.png';
 import seen from '../../assets/images/seen.png';
-import Section from '../../Section';
+import Section from '../Section';
 
 const Hr =styled.hr`
     background-color: #e5e5e59f;
@@ -61,9 +61,9 @@ class OurStoryes extends React.Component{
                 <View w='380px' op='0.6' fontSize='14px' mB='25px'>{item.about}</View>
                 <Hr/>
                 <View flex alignI='center' justC='space-between' w='110px' fontSize="14px">
-                    <img src={seen}/>
+                    <img src={seen} alt='seen' />
                     <Text op='0.5'>{item.seen}</Text>
-                    <img src={comment}/>
+                    <img src={comment} alt='com' />
                     <Text  op='0.5'>{item.comment}</Text>
                 </View>
             </View>

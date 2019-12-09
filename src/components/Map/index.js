@@ -26,7 +26,7 @@ function Map(){
     return(
         <View bgImg={map} flex mT='115px' bgRep='no-repeat'>
             <View flex m='50px auto' justC='space-between' alignI='center' fD='column'>
-                <img src={maplogo}/>
+                <img src={maplogo} alt='map' />
                 <Open href='https://goo.gl/maps/5jhsLyQ51Fn3Yi8k9'>Open Map</Open>
             </View> 
         </View>

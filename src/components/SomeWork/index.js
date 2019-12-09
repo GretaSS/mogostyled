@@ -1,5 +1,4 @@
 import React from 'react';
-// import './style.css';
 import styled from "styled-components";
 import View from '../../styled/View';
 
@@ -10,7 +9,7 @@ import work4 from '../../assets/images/work-4.jpg';
 import work5 from '../../assets/images/work-5.jpg';
 import work6 from '../../assets/images/work-6.jpg';
 import work7 from '../../assets/images/work-7.jpg';
-import Section from '../../Section';
+import Section from '../Section';
 
 const Picdiv = styled.div`
     width: 480px;
@@ -47,14 +46,14 @@ function SomeWork(){
                 text='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
             />
 
-            <View flex h='780px' fF='wrap' fD='column'>
-                <Picdiv><Imgop src={work1}/></Picdiv>
-                <Picdiv><Imgop src={work3}/></Picdiv>
-                <Picdiv><Imgop src={work2}/></Picdiv>
-                <Picdiv><Imgop src={work4}/></Picdiv>
-                <Piclong><Imgop src={work5}/></Piclong>
-                <Picdiv><Imgop src={work6}/></Picdiv>
-                <Picdiv><Imgop src={work7}/></Picdiv>
+            <View flex h='780px' w='100%' fW='wrap' fD='column' overflow='hidden'bgColor='#95e1d3'>
+                <Picdiv><Imgop src={work1} alt='work' /></Picdiv>
+                <Picdiv><Imgop src={work3} alt='work' /></Picdiv>
+                <Picdiv><Imgop src={work2} alt='work' /></Picdiv>
+                <Picdiv><Imgop src={work4} alt='work' /></Picdiv>
+                <Piclong><Imgop src={work5} alt='work' /></Piclong>
+                <Picdiv><Imgop src={work6} alt='work' /></Picdiv>
+                <Picdiv><Imgop src={work7} alt='work' /></Picdiv>
             </View>
         </View>
     )

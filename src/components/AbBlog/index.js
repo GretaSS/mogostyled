@@ -28,7 +28,7 @@ class AbBlog extends React.Component{
     renderBlogItem = () => (
         this.state.intro.map( (item, index) => (
             <View key={index} mT='30px' w='345px' flex>
-                <img src={item.src}/>
+                <img src={item.src} alt='blogitem' />
                 <View mL='20px' tTf='uppercase' fontSize='12px' fontW='bold' lh='1.5'>{item.text}
                     <View fontW='200' fontStyle='italic' op='0.6' tTf='capitalize'>Jan 9, 2016</View>
                 </View>

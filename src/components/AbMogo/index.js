@@ -41,13 +41,13 @@ function AbMogo(){
             <Hr/>
             <View flex justC='space-between' alignI='center' w='310px' mT='15px' fontStyle='italic'>
                 <Text>Follow Us:</Text>
-                <img src={facebook}/>
-                <img src={twetter}/>
-                <img src={instagram}/>
-                <img src={pinterest}/>
-                <img src={youtube}/>
-                <img src={wiki}/>
-                <img src={t}/>
+                <img src={facebook} alt='fb' />
+                <img src={twetter} alt='tw' />
+                <img src={instagram} alt='in' />
+                <img src={pinterest} alt='p' />
+                <img src={youtube} alt='y' />
+                <img src={wiki} alt='w' />
+                <img src={t} alt='t' />
             </View>
             <View mT='41px'>
                 <Input placeholder='Your Email...'/>

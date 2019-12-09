@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import View from '../styled/View';
+import View from '../../styled/View';
 
 const After = styled(View)`
     &:after{

@@ -17,21 +17,18 @@ const But = styled.button`
 `;
 
 const Scr = styled(Text)`
-    &:-webkit-scrollbar-track
-    {
+    ::-webkit-scrollbar-track{
         border-radius: 10px;
         background-color: #F5F5F5;
-    }
-    &:-webkit-scrollbar
-    {
+    };
+    ::-webkit-scrollbar{
         width: 7px;
         background-color: #F5F5F5;
-    }
-    &:-webkit-scrollbar-thumb
-    {
+    };
+    ::-webkit-scrollbar-thumb{
         border-radius: 10px;
         background-color: #95e1d3;
-    }
+    };
 `;
 
 class ServiceIntro extends React.Component{
@@ -56,11 +53,11 @@ class ServiceIntro extends React.Component{
           this.state.navs.map( ( item ) => (
             <View key={item.id} w='600px' mB='7px'>
                 <View flex justC='space-between' p='15px' alignI='center' border='solid rgba(0, 0, 0, 0.068) 1px'>
-                    <img src = { item.src }></img>
+                    <img src = { item.src } alt='item'/>
                     <View mL='15px' fontSize='15pt' tTf='uppercase'> { item.name } </View>
                     <But onClick ={ () => this.dropDown(item.id) }>&#8657;</But>
                 </View>
-                { this.state.showId == item.id && 
+                { this.state.showId === item.id && 
                     <View p='20px' font='14pt' border='solid rgba(0, 0, 0, 0.068) 1px' bT='none'>
                         <Scr m='0' maxH='135px' overflow='auto' op='0.6'>{ item.text }</Scr>
                     </View>       

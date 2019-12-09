@@ -23,7 +23,7 @@ class SWorkSlider extends React.Component{
                     <Button left>&#60;</Button>
 
                     <View flex justC='space-between' alignI='center' m='0 30px'>
-                        <img src={joshua}/>
+                        <img src={joshua} alt='people' />
                         <View p='40px'>
                             <Text fontSize='22px' fontF="'Arial,Helvetica'" fontStyle='italic' op='0.5'>
                                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."

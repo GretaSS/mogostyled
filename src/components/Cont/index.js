@@ -1,11 +1,11 @@
 import React from 'react';
 import ImagesInner from "../ImagesInner";
 import View from '../../styled/View';
-import Section from '../../Section';
+import Section from '../Section';
 
 function Cont(){
     return(
-        <View flex m='0 auto' alignI='center' fD='column'>          
+        <View flex m='0 auto' alignI='center' fD='column'>
             <Section 
                 suptitle='What we do'
                 title='STORY ABOUT US'

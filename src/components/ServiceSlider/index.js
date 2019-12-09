@@ -41,11 +41,11 @@ class ServiceSlider extends React.Component{
     }
     renderSliderItem = () => ( 
         this.state.intro.map( (item, index) => ( 
-            this.state.showId == item.id && 
+            this.state.showId === item.id && 
             <View key={index} flex justC='center' alignI='center' m='0 auto' maxW='1200px'>
                 <But onClick = { () => this.leftItem(item.id)}>&#60;</But>
                     <View flex justC='space-between' alignI='center' m='0 30px'>
-                        <img src={citate}/>
+                        <img src={citate} alt='citate'/>
                         <View p='40px'>
                             <Text fontSize="22px" fontF='Arial' fontStyle='italic' op='0.5'>{item.text}</Text>
                             <View fontSize="25px" fontF="'Kaushan Script'">-{item.name}</View>

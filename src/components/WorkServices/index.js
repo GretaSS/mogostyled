@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import View from '../../styled/View';
 import Text from '../../styled/Text';
-import Section from '../../Section';
+import Section from '../Section';
 
 import icon1 from "../../assets/images/1.png";
 import icon2 from "../../assets/images/2.png";
@@ -68,7 +68,7 @@ class WorkServices extends React.Component{
     renderServicesFirstItems = () => (
         this.state.servicesFirst.map( (item, index) => (
             <View key={index} pos='relative' pL='90px' f='1 1 0'>
-                <Img src={item.src}/>
+                <Img src={item.src} alt='item' />
                 <View tTf='uppercase' fontSize='11pt'op='0.7' mB='10px'>{item.name}</View>
                 <Text op='0.3' fontSize='12px'>{item.lorem}</Text>
             </View>
@@ -78,7 +78,7 @@ class WorkServices extends React.Component{
     renderServicesSecondItems = () => (
         this.state.servicesSecond.map( (item, index) => (
             <View key={index} pos='relative' pL='90px' f='1 1 0'>
-                <Img src={item.src}/>
+                <Img src={item.src} alt='item' />
                 <View tTf='uppercase' fontSize='11pt'op='0.7' mB='10px'>{item.name}</View>
                 <Text op='0.3' fontSize='12px'>{item.lorem}</Text>
             </View>
