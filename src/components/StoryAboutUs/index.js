@@ -1,9 +1,9 @@
 import React from 'react';
-import ImagesInner from "../ImagesInner";
+import StoryImages from "../StoryImages";
 import View from '../../styled/View';
 import Section from '../Section';
 
-function Cont(){
+function StoryAboutUs(){
     return(
         <View flex m='0 auto' alignI='center' fD='column'>
             <Section 
@@ -12,9 +12,9 @@ function Cont(){
                 text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, modi eius enim doloremque, voluptatum sunt nam libero
                 debitis blanditiis temporibusveniam vitae facilis nihil consectetur nostrum reprehenderit'
             />
-            <ImagesInner/>
+            <StoryImages/>
         </View>
     )
 }
 
-export default Cont
+export default StoryAboutUs

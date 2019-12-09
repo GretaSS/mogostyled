@@ -1,33 +1,33 @@
 import Header from "./Header";
-import Cont from './Cont';
-import ImagesInner from './ImagesInner';
+import StoryAboutUs from './StoryAboutUs';
+import StoryImages from './StoryImages';
 import Intro from './Intro';
-import OurProgress from './OurProgress';
+import StoryProgress from './StoryProgress';
 import Service from './Service';
 import UniqueDesign from './UniqueDesign';
-import WorkServices from './WorkServices';
-import OurTeam from './OurTeam';
-import SomeWork from './SomeWork';
-import SWorkSlider from './SWorkSlider';
-import HappyClients from './HappyClients';
-import OurStoryes from './OurStoryes';
+import AmazingServices from './AmazingServices';
+import MeetOurTeam from './MeetOurTeam';
+import SomeOfOurWork from './SomeOfOurWork';
+import SomeOOWSlider from './SomeOOWSlider';
+import WhatPeopleSay from './WhatPeopleSay';
+import LatestBlog from './LatestBlog';
 import Map from './Map';
 import Footer from './Footer';
 
 export {
     Header,
-    Cont,
-    ImagesInner,
+    StoryAboutUs,
+    StoryImages,
     Intro,
-    OurProgress,
+    StoryProgress,
     Service,
     UniqueDesign,
-    WorkServices,
-    OurTeam,
-    SomeWork,
-    SWorkSlider,
-    HappyClients,
-    OurStoryes,
+    AmazingServices,
+    MeetOurTeam,
+    SomeOfOurWork,
+    SomeOOWSlider,
+    WhatPeopleSay,
+    LatestBlog,
     Map,
     Footer,
 };

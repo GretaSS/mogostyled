@@ -3,9 +3,9 @@ import styled from 'styled-components';
 import View from '../../styled/View';
 import Text from '../../styled/Text';
 
-import AbMogo from '../AbMogo';
-import AbBlog from '../AbBlog';
-import AbInsta from '../AbInsta';
+import FooterMogo from '../FooterMogo';
+import FooterBlog from '../FooterBlog';
+import FooterInsta from '../FooterInsta';
 
 const Hr = styled.hr`
     background-color: #e5e5e59f;
@@ -18,9 +18,9 @@ function Footer(){
     return(
         <View flex alignI='center' fD='column'>
             <View flex justC='space-between' alignI='center' m='74px auto 70px' maxW='1200px'>
-                <AbMogo/>
-                <AbBlog/>
-                <AbInsta/>
+                <FooterMogo/>
+                <FooterBlog/>
+                <FooterInsta/>
             </View> 
             <Hr/>
             <View fontW='500' fontSize='14px'>© 2016 MoGo free PSD template by <Text c='#ff8585'>Laaqiq</Text> </View>

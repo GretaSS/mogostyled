@@ -1,7 +1,7 @@
 import React from "react";
 import View from '../../styled/View';
 
-class OurProgress extends React.Component{
+class StoryProgress extends React.Component{
     constructor(props){
         super(props);
         this.state = {
@@ -68,4 +68,4 @@ class OurProgress extends React.Component{
     }
     
 }
-export default OurProgress
+export default StoryProgress

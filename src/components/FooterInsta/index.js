@@ -22,7 +22,7 @@ const Img =styled.img`
     margin: 2px;
 `;
 
-function AbInsta(){
+function FooterInsta(){
     return(
         <View w='276px' h='355px'>
             <View m='0 auto 34px' fontW='bold' op='0.7'>INSTAGRAM</View>
@@ -42,4 +42,4 @@ function AbInsta(){
     )
 }
 
-export default AbInsta;
+export default FooterInsta;

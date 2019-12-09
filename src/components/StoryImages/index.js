@@ -23,7 +23,7 @@ const Abimg = styled(View)`
     }
 `;
 
-function ImagesInner(){
+function StoryImages(){
     return(
         <View flex justC='space-between'>
             <View bgColor='#95e1d3' mR='53px' w='380px'>
@@ -44,4 +44,4 @@ function ImagesInner(){
         </View>
     )
 }
-export default ImagesInner
+export default StoryImages

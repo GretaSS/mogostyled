@@ -5,7 +5,7 @@ import fblog1 from '../../assets/images/fblog1.png';
 import fblog2 from '../../assets/images/fblog2.png';
 import fblog3 from '../../assets/images/fblog3.png';
 
-class AbBlog extends React.Component{
+class FooterBlog extends React.Component{
     constructor(props){
         super(props);
         this.state = {
@@ -47,4 +47,4 @@ class AbBlog extends React.Component{
     
 }
 
-export default AbBlog;
+export default FooterBlog;

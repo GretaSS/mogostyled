@@ -17,7 +17,7 @@ const Hr =styled.hr`
     height: 0.1px;
 `;
 
-class OurStoryes extends React.Component{
+class LatestBlog extends React.Component{
     constructor(props){
         super(props);
         this.state = {
@@ -72,7 +72,10 @@ class OurStoryes extends React.Component{
     render(){
         return(
             <View>
-                <Section suptitle='Our Storyes' title='Latest Blog' />
+                <Section 
+                    suptitle='Our Storyes'
+                    title='Latest Blog'
+                />
                 <View  flex m='0 auto' alignI='center' justC='space-between' maxW='1200px'>
                     {this.renderCallendarItem()}
                 </View>
@@ -80,7 +83,7 @@ class OurStoryes extends React.Component{
         )
     }
 }
-export default OurStoryes
+export default LatestBlog
 
 
 

@@ -3,16 +3,16 @@ import React from 'react';
 import { 
   Header, 
   Intro, 
-  Cont, 
-  OurProgress, 
-  WorkServices, 
+  StoryAboutUs, 
+  StoryProgress, 
+  AmazingServices, 
   UniqueDesign, 
   Service,
-  OurTeam,
-  SomeWork,
-  SWorkSlider,
-  HappyClients,
-  OurStoryes,
+  MeetOurTeam,
+  SomeOfOurWork,
+  SomeOOWSlider,
+  WhatPeopleSay,
+  LatestBlog,
   Map,
   Footer,
 } from './components';
@@ -23,16 +23,16 @@ function App() {
     <div className="App">
       <Header/>
       <Intro/>
-      <Cont/>
-      <OurProgress/>
-      <WorkServices/>
+      <StoryAboutUs/>
+      <StoryProgress/>
+      <AmazingServices/>
       <UniqueDesign/> 
       <Service/>
-      <OurTeam/>
-      <SomeWork/>
-      <SWorkSlider/>
-      <HappyClients/>
-      <OurStoryes/>
+      <MeetOurTeam/>
+      <SomeOfOurWork/>
+      <SomeOOWSlider/>
+      <WhatPeopleSay/>
+      <LatestBlog/>
       <Map/>
       <Footer/>
     </div>

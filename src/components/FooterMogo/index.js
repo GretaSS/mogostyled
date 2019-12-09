@@ -32,7 +32,7 @@ const Hr = styled.hr`
     width: 100%;
 `;
 
-function AbMogo(){
+function FooterMogo(){
     return(
         <View w='464px'>
             <View fontSize='46px' fontW='800' op='0.2'>MoGo</View>
@@ -57,4 +57,4 @@ function AbMogo(){
     )
 }
 
-export default AbMogo;
+export default FooterMogo;

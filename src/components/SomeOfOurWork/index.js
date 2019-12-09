@@ -37,7 +37,7 @@ const Imgop = styled.img`
     }
 `;
 
-function SomeWork(){
+function SomeOfOurWork(){
     return(
         <View mT='100px'>
             <Section 
@@ -59,4 +59,4 @@ function SomeWork(){
     )
 }
 
-export default SomeWork;
+export default SomeOfOurWork;

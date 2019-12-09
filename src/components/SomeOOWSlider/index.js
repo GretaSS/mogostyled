@@ -15,7 +15,7 @@ const Button = styled.button`
     color: ${props => (props.left ? "blue" : "red" )};
 `;
 
-class SWorkSlider extends React.Component{
+class SomeOOWSlider extends React.Component{
     render(){
         return(
             <View w='100%' h='240px' m='100px 0'>
@@ -39,4 +39,4 @@ class SWorkSlider extends React.Component{
     }
 }
 
-export default SWorkSlider
+export default SomeOOWSlider

@@ -6,9 +6,7 @@ import ServiceSlider from '../ServiceSlider';
 
 import Section from '../Section';
 
-class Service extends React.Component {
-
-    render(){
+function Service(){
     return(
         <View flex justC='space-between' alignI='center' fD='column'>
             <Section 
@@ -26,6 +24,5 @@ class Service extends React.Component {
             <ServiceSlider/>
         </View>
     )
-    }
 }
 export default Service

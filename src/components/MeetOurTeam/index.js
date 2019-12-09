@@ -25,7 +25,7 @@ const Img = styled.img`
     }
 `;
 
-class OurTeam extends React.Component {
+class MeetOurTeam extends React.Component {
     constructor(props){
         super(props);
         this.state ={
@@ -82,4 +82,4 @@ class OurTeam extends React.Component {
     }
 }
 
-export default OurTeam;
+export default MeetOurTeam;

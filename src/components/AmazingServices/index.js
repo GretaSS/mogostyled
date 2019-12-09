@@ -24,7 +24,7 @@ const Img = styled.img`
     z-index: 1;
 `;
 
-class WorkServices extends React.Component{
+class AmazingServices extends React.Component{
     constructor(props){
         super(props);
         this.state = {
@@ -69,8 +69,8 @@ class WorkServices extends React.Component{
         this.state.servicesFirst.map( (item, index) => (
             <View key={index} pos='relative' pL='90px' f='1 1 0'>
                 <Img src={item.src} alt='item' />
-                <View tTf='uppercase' fontSize='11pt'op='0.7' mB='10px'>{item.name}</View>
-                <Text op='0.3' fontSize='12px'>{item.lorem}</Text>
+                <View tTf='uppercase' fontSize='20px'op='0.7' mB='10px'>{item.name}</View>
+                <Text op='0.3' fontSize='13px'>{item.lorem}</Text>
             </View>
         ))
     )
@@ -79,8 +79,8 @@ class WorkServices extends React.Component{
         this.state.servicesSecond.map( (item, index) => (
             <View key={index} pos='relative' pL='90px' f='1 1 0'>
                 <Img src={item.src} alt='item' />
-                <View tTf='uppercase' fontSize='11pt'op='0.7' mB='10px'>{item.name}</View>
-                <Text op='0.3' fontSize='12px'>{item.lorem}</Text>
+                <View tTf='uppercase' fontSize='20px'op='0.7' mB='10px'>{item.name}</View>
+                <Text op='0.3' fontSize='13px'>{item.lorem}</Text>
             </View>
         ))
     )
@@ -108,4 +108,4 @@ class WorkServices extends React.Component{
     
 }
 
-export default WorkServices
+export default AmazingServices

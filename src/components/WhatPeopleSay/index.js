@@ -26,7 +26,7 @@ const Pic = styled.img`
     z-index: 1;
 `;
 
-class HappyClients extends React.Component{
+class WhatPeopleSay extends React.Component{
     constructor(props){
         super(props);
         this.state = {
@@ -90,7 +90,10 @@ class HappyClients extends React.Component{
     render(){
         return(
             <View bgImg={peoplesay} flex fD='column' w='100%' h='100vh' bgSize='cover'>
-                <Section suptitle="Happy Clients" title="What People Say"/>
+                <Section 
+                    suptitle="Happy Clients" 
+                    title="What People Say"
+                />
                 <View flex justC='space-between' alignI='center' m='auto 90px' mT='0'>
                     {this.renderClientsFirstItems()}
                 </View>
@@ -102,4 +105,4 @@ class HappyClients extends React.Component{
         )
     }
 }
-export default HappyClients;
+export default WhatPeopleSay;
