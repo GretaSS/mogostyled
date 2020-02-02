@@ -20,7 +20,7 @@ import {
 
 function App() {
   return (
-    <div className="App">
+    < >
       <Header/>
       <Intro/>
       <StoryAboutUs/>
@@ -35,7 +35,7 @@ function App() {
       <LatestBlog/>
       <Map/>
       <Footer/>
-    </div>
+    </>
   );
 }
 
